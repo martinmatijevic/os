@@ -55,7 +55,7 @@ uint64_t generiraj_dobar_broj()
 	return najbolji_broj;
 }
 
-uint64_t procjeni_velicinu_grupe()
+void procjeni_velicinu_grupe()
 {
 	uint64_t M = 1000;
 	uint64_t SEKUNDI = 5;
@@ -75,7 +75,6 @@ uint64_t procjeni_velicinu_grupe()
 	}
 	brojeva_u_sekundi = k * M / SEKUNDI;
 	velicina_grupe = brojeva_u_sekundi*2/5;
-	return velicina_grupe;
 }
 
 int main(int argc, char *argv[])
@@ -84,8 +83,8 @@ int main(int argc, char *argv[])
 	time_t t=time(NULL);
 	FILE *fp;
 	inicijaliziraj_generator (&p, 0);
-	velicina_grupe=procjeni_velicinu_grupe();
-	fp=fopen("readme.txt","w");	
+	procjeni_velicinu_grupe();
+	fp=fopen("readme.txt","w");
 	while (broj_ispisa<10)
 	{
 		broj = generiraj_dobar_broj();
@@ -94,7 +93,7 @@ int main(int argc, char *argv[])
 		{
 			broj=uzmi_iz_MS();
 			printf("%lx\n", broj);
-			fprintf(fp,"%lx\n", broj);	
+			fprintf(fp,"%lx\n", broj);
 			broj_ispisa++;
 			t = time(NULL);
 		}
