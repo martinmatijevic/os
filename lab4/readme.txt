@@ -1,27 +1,44 @@
-Dretva 2 radna stavio c5335452a6554c2b
-Dretva 6 neradna uzeo 5287554dd4f9e14f
-Dretva 3 radna stavio a6675556530b9acd
-Dretva 7 neradna uzeo 4bb388ac6395ca01
-Dretva 4 radna stavio b5665ccc89cd354d
-Dretva 5 neradna uzeo f3bfcbcd3d8d6295
-Dretva 1 radna stavio d1d9598ccd5559b3
-Dretva 0 radna stavio b56e6653331452b1
-Dretva 7 neradna uzeo c5335452a6554c2b
-Dretva 6 neradna uzeo a6675556530b9acd
-Dretva 3 radna stavio 552d55666cd33829
-Dretva 5 neradna uzeo b5665ccc89cd354d
-Dretva 2 radna stavio 8cc4ab1aaa555aab
-Dretva 4 radna stavio d2734ccccd7aaa9f
-Dretva 0 radna stavio 86ad2b55a74d4d55
-Dretva 1 radna stavio 654cd94653cadaab
-Dretva 7 neradna uzeo 552d55666cd33829
-Dretva 6 neradna uzeo 8cc4ab1aaa555aab
-Dretva 5 neradna uzeo d2734ccccd7aaa9f
-Dretva 7 neradna uzeo 86ad2b55a74d4d55
-Dretva 2 radna stavio 62a659d8aaa99eab
-Dretva 6 neradna uzeo 654cd94653cadaab
-Dretva 4 radna stavio 8562a53593326333
-Dretva 3 radna stavio a6693298cd9adae5
-Dretva 0 radna stavio 62ad6b3cd339a657
-Dretva 1 radna stavio 6652bb29a65aaccb
-Dretva 5 neradna uzeo 62a659d8aaa99eab
+Dretva 0
+stavio 34655666c65cd563
+Dretva 5
+uzeo   c9dc2fa716ed2467
+Dretva 0
+stavio 3359998999e1a6a7
+Dretva 5
+uzeo   f1e3c6f84c9da0b6
+Dretva 0
+stavio ab28d995499b326d
+Dretva 5
+uzeo   6d5ec056ac1c5b0f
+Dretva 0
+stavio 9ca8d52ad998d433
+Dretva 5
+uzeo   82207d1f1a281709
+Dretva 0
+stavio 4653aa65995355db
+Dretva 5
+uzeo   34655666c65cd563
+Dretva 2
+stavio 3564b2aaa6cb3c61
+Dretva 6
+uzeo   3359998999e1a6a7
+Dretva 3
+stavio 95b193959564d555
+Dretva 7
+uzeo   ab28d995499b326d
+Dretva 4
+stavio d9aa5646672998c5
+Dretva 1
+stavio cc7964aacb52ad65
+Dretva 5
+uzeo   4653aa65995355db
+Dretva 5
+uzeo   3564b2aaa6cb3c61
+Dretva 0
+stavio d7365572b4a8aaad
+Dretva 5
+uzeo   95b193959564d555
+Dretva 0
+stavio 3a8c66ab14aab565
+Dretva 5
+uzeo   d9aa5646672998c5

@@ -10,7 +10,7 @@
 #define UZMIBITOVE(broj,prvi,bitova)	(((broj)>>(64-(prvi)))&MASKA(bitova))
 #define N	5
 #define M	3
-#define BROJ_J_ITERACIJA	300000000
+#define BROJ_J_ITERACIJA	500000000
 
 struct gmp_pomocno gg;
 uint64_t velicina_grupe = 1;
@@ -109,7 +109,7 @@ void *radna_dretva (void *id)
 	int iid = *((int*) id);
 	unsigned long brojac = 0;
 	unsigned long j;
-	if ( iid == N ) {
+	if ( iid == 0 ) {
 		struct sched_param prio;
 		prio.sched_priority = 1;
 		if (pthread_setschedparam (pthread_self(), SCHED_RR, &prio)) {
@@ -123,15 +123,15 @@ void *radna_dretva (void *id)
 		sem_wait(&sPrazni);
 		sem_wait(&sKO);
 		stavi_u_MS(x);
-		printf ("Dretva %d radna ", iid);
+		printf ("Dretva %d\n", iid);
 		printf("stavio %lx\n", x);
 		sem_post(&sKO);
 		sem_post(&sPuni);
 		for (j = 0; j < BROJ_J_ITERACIJA; j++)
 				;
-		if ( iid == N ) {
+		if ( iid == 0 ) {
 			brojac++;
-			if (brojac%5 == 0) sleep(3);
+			if (brojac%5 == 0) sleep(5);
 		}
 	}
 	while (kraj != KRAJ_RADA);
@@ -145,7 +145,7 @@ void *neradna_dretva (void *id)
 	int iid = *((int*) id);
 	unsigned long brojac = 0;
 	unsigned long j;
-	if ( iid == M ) {
+	if ( iid == N ) {
 		struct sched_param prio;
 		prio.sched_priority = 1;
 		if (pthread_setschedparam (pthread_self(), SCHED_RR, &prio)) {
@@ -157,13 +157,13 @@ void *neradna_dretva (void *id)
 		sem_wait(&sPuni);
 		sem_wait(&sKO);
 		y = uzmi_iz_MS();
-		printf ("Dretva %d neradna ", iid);
-		printf("uzeo %lx\n", y);
+		printf ("Dretva %d\n", iid);
+		printf("uzeo   %lx\n", y);
 		sem_post(&sKO);
 		sem_post(&sPrazni);
 		for (j = 0; j < BROJ_J_ITERACIJA; j++)
 				;
-		if ( iid == M ) {
+		if ( iid == N ) {
 			brojac++;
 			if (brojac%5 == 0) sleep(3);
 		}
